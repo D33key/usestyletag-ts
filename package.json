@@ -1,0 +1,64 @@
+{
+	"name": "usestyletag-ts",
+	"version": "1.0.2",
+	"description": "React hook to set style tag in head, written in Typescript.",
+	"main": "./dist/index.js",
+	"module": "true",
+	"type": "module",
+	"author": "D33Key",
+	"license": "ISC",
+	"resolutions": {
+		"typescript": "^5.3.3"
+	},
+	"keywords": [
+		"typescript",
+		"react",
+		"hook",
+		"usestyletag",
+		"usestyletag-ts",
+		"styletag"
+	],
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest"
+	},
+	"engines": {
+		"node": ">=18.17.0"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^10.4.0",
+		"@testing-library/jest-dom": "^6.5.0",
+		"@testing-library/react": "^16.0.1",
+		"@testing-library/react-hooks": "^8.0.1",
+		"@types/react": "^18.3.8",
+		"jsdom": "^25.0.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.2",
+		"vitest": "^2.1.1"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0  || ^17 || ^18"
+	},
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/D33key/usestyletag-ts"
+	}
+}
